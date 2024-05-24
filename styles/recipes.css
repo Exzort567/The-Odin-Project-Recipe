@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgb(250, 235, 215);
+    font-family: "Amatic SC", sans-serif;
+}
+
+/* ======= Header ====== */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: rgb(245, 221, 190);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    text-align: center;
+    color: rgb(248, 206, 151);
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(248, 206, 151);
+}
+
+.nav {
+    text-decoration: none;
+    color: #6d440a;
+    font-size: 1.2rem;
+}
+
+.logo-text {
+    text-decoration: none;
+    color: #6d440a;
+    font-size: 1.6rem;
+    margin-left: 10px;
+}
+
+/* ======= Main ====== */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 120px;
+}
+
+/* ======= Recipe Info ====== */
+.recipe-info {
+    background-color: rgb(255, 201, 126);
+    padding: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 18px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
+}
+
+.recipe-info:hover {
+    box-shadow: 0 0 35px rgb(250, 235, 215);
+    transition: box-shadow 0.5s;
+}
+
+.recipe-name {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.recipe-desc {
+    margin-top: 30px;
+    width: 350px;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+/* ======= Recipe Details ====== */
+.recipe {
+    background-color: rgb(250, 235, 215);
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 100px;
+}
+
+.ingredients, .steps, .nutrients {
+    background-color: rgb(255, 201, 126);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
+    margin: 10px;
+    width: 30%;
+}
+
+.ingredients:hover, .steps:hover, .nutrients:hover {
+    box-shadow: 0 0 35px rgb(250, 235, 215);
+    transition: box-shadow 0.5s;
+}
+
+.ingredients ul, .steps ol {
+    text-align: left;
+    font-size: 1.85rem;
+    font-weight: 700;
+}
+
+.steps ol {
+    margin-left: 12px;
+}
+.nutrients table {
+    width: 100%;
+    text-align: left;
+    margin-top: 20px;
+    font-size: 1.7rem;
+    font-weight: 900;
+}
+
+.nutrients table th, .nutrients table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.nutrients table th {
+    background-color: #ffe3a1;
+}
