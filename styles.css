@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    min-height: 100vh;
+
+}
+/* ======= Header ====== */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color:rgb(245, 221, 190);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    text-align: center;
+    color: rgb(248, 206, 151);
+}
+
+.header-logo {
+    display: flex;
+    text-decoration: none;
+    color: rgb(248, 206, 151);
+}
+
+.nav {
+    text-decoration: none;
+    color: #6d440a;
+}
+
+.logo-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #6d440a;
+    font-size: 1.6rem;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* ======= Main ====== */
+
+.main {
+    background-color: rgb(250, 235, 215);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* ======= recipes ====== */
+
+.recipes {
+
+    display: flex;
+    gap: 35px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 201, 126);
+    padding: 85px;
+    border-radius: 12px;
+}
+
+.recipe1, .recipe2, .recipe3 {
+    background-color: #ffac38;
+    padding: 25px;
+    border-radius: 23px;
+    cursor: pointer;
+}
+
+.recipe1 p, .recipe2 p, .recipe3 p {
+    margin-top: 23px;
+    font-size: 30px;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.recipe1:hover, .recipe2:hover, .recipe3:hover {
+    box-shadow: 0 0 50px rgba(177, 103, 7, 0.896);
+    transition: box-shadow 0.5s;
+}
+
+
+img {
+    border-radius: 8px;
+}
+
+.recipe-link {
+    text-decoration: none;
+    color: #2d1b01;
+    font-size: 35px;
+    font-weight: 800;
+}
